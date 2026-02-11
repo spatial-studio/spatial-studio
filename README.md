@@ -46,10 +46,10 @@ With hands-on expertise in ArcGIS Pro and spatial workflows, I support infrastru
 
 ## 📂 Featured Projects
 
-- 🔹 DWG to Shapefile Conversion Workflow  
-- 🔹 Climate Risk Assessment for Infrastructure  
-- 🔹 Professional Cartographic Layout Portfolio  
-- 🔹 Historical Map Georeferencing Project  
+-  DWG to Shapefile Conversion Workflow  
+-  Climate Risk Assessment for Infrastructure  
+-  Professional Cartographic Layout Portfolio  
+-  Historical Map Georeferencing Project  
 
 Explore my repositories below 👇  
 
