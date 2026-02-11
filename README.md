@@ -75,4 +75,8 @@ Explore my repositories below 👇
 
 ![Dragon Jump](https://raw.githubusercontent.com/spatial-studio/spatial-studio/main/assets/dragon-jump/dragon-jump.gif)
 
+![Snake animation](https://raw.githubusercontent.com/spatial-studio/spatial-studio/output/github-contribution-grid-snake.svg)
+
+
+
 
