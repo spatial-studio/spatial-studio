@@ -73,5 +73,5 @@ Explore my repositories below 👇
 
 ⭐ Available for freelance GIS projects and collaborations worldwide.
 
-![Dragon Jump](assets/dragon-jump/dragon-jump.gif)
+![Dragon Jump](.github/workflows//dragon-jump/dragon-jump.gif)
 
