@@ -1,4 +1,3 @@
-![GIS Banner](./Bilder/maps.jpg)
 
 # 👋 Hi, I'm Lakshman Krishnan  
 ### Spatial Data Specialist | GIS Consultant | ArcGIS Pro Expert  
