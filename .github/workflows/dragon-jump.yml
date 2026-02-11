@@ -1,0 +1,51 @@
+name: Dragon Jump (GIF) for Profile README
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"  # every 6 hours
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+
+      - name: Generate frames + GIF
+        run: |
+          mkdir -p assets/dragon-jump/frames
+
+          # Create 20 simple frames (ASCII-ish pixel blocks) and compile into a GIF
+          for i in $(seq 0 19); do
+            # positions
+            x_obs=$((520 - i*30))
+            y_dragon=140
+            if [ "$i" -ge 6 ] && [ "$i" -le 9 ]; then y_dragon=70; fi
+
+            convert -size 600x200 xc:"#111111" \
+              -fill "#ffffff" -draw "rectangle 0,0 599,199" -fill "#111111" -draw "rectangle 3,3 596,196" \
+              -fill "#00ff88" -draw "rectangle $x_obs,140 $((x_obs+20)),180" \
+              -fill "#ff4444" -draw "rectangle 70,$y_dragon 110,$((y_dragon+40))" \
+              -fill "#ffffff" -pointsize 18 -draw "text 12,28 'DRAGON JUMP'" \
+              -fill "#aaaaaa" -pointsize 14 -draw "text 12,190 'auto-updated via GitHub Actions'" \
+              "assets/dragon-jump/frames/frame_${i}.png"
+          done
+
+          convert -delay 8 -loop 0 assets/dragon-jump/frames/frame_*.png assets/dragon-jump/dragon-jump.gif
+
+      - name: Commit GIF
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add assets/dragon-jump/dragon-jump.gif
+          git commit -m "Update dragon-jump GIF" || echo "No changes"
+          git push
