@@ -73,10 +73,6 @@ Explore my repositories below 👇
 
 ⭐ Available for freelance GIS projects and collaborations worldwide.
 
-![Dragon Jump](https://raw.githubusercontent.com/spatial-studio/spatial-studio/main/assets/dragon-jump/dragon-jump.gif)
-
-![Snake animation](https://raw.githubusercontent.com/spatial-studio/spatial-studio/main/assets/dragon-jump/dragon-jump.gif)
-
 
 
 
