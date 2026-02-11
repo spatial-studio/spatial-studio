@@ -72,3 +72,8 @@ Explore my repositories below 👇
 ---
 
 ⭐ Available for freelance GIS projects and collaborations worldwide.
+
+
+![Snake animation](https://raw.githubusercontent.com/spatial-studio/spatial-studio/output/github-contribution-grid-snake.svg)
+
+![Snake animation dark](https://raw.githubusercontent.com/spatial-studio/spatial-studio/output/github-contribution-grid-snake-dark.svg)
